@@ -1,0 +1,94 @@
+# Minimal FinTrace Michelson interferometer
+#
+# Topology:
+#   Laser -> L1 -> BS.Front1
+#                       |-- BS.Back1  -> MX  (transmitted x arm)
+#                       |-- BS.Front2 -> MY  (reflected y arm)
+#                       `-- BS.Back2  -> PD_AS (antisymmetric/dark port)
+#
+# All positions and dimensions are in meters. Angles are in degrees.
+
+Laser:
+  Type: Laser
+  Position:
+    X: -0.75
+    Y: 0.00
+  Connections:
+    Front: L1
+  P: 1.0
+  Wavelength: 1.064e-6
+  w: 0.0005
+  RoC: .inf
+  normAngle: 0.0
+
+L1:
+  Type: Lens
+  Position:
+    X: -0.50
+    Y: 0.00
+  Connections:
+    Front: Laser
+    Back: BS
+  Focal Length: 0.50
+  diameter: 0.025
+
+BS:
+  Type: Beamsplitter
+  Position:
+    X: 0.00
+    Y: 0.00
+  Connections:
+    Front1: L1
+    Front2: MY
+    Back1: MX
+    Back2:
+  T: 0.50
+  L: 0.0
+  R_AR: 0.0
+  thickness: 0.005
+  nr: 1.45
+  Rc: .inf
+  Rc_AR: .inf
+  diameter: 0.025
+  normAngle: 135.0
+  aoi: 45.0
+
+MX:
+  Type: Mirror
+  Position:
+    X: 0.50
+    Y: 0.00
+  Connections:
+    Front: BS
+    Back:
+  T: 0.0
+  L: 0.0
+  Rc: .inf
+  diameter: 0.025
+
+MY:
+  Type: Mirror
+  Position:
+    X: 0.00
+    Y: 0.50
+  Connections:
+    Front: BS
+    Back:
+  T: 0.0
+  L: 0.0
+  Rc: .inf
+  diameter: 0.025
+
+PD_AS:
+  Type: Photodiode
+  Position:
+    X: -0.10
+    Y: -0.20
+  Port: BS.bk2.o
+
+PD_REFL:
+  Type: Photodiode
+  Position:
+    X: -0.30
+    Y: 0.05
+  Port: BS.fr1.o
