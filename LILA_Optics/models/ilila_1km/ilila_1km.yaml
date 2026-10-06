@@ -1,0 +1,73 @@
+# iLILA 1 km Michelson: first Gaussian-beam / layout model.
+# SI units. Each BS-to-end-mirror coordinate baseline is 1000 m.
+# 1064 nm matches our lunar-reference wavelength. No arm cavities.
+# Laser -> BS.Front1; BS.Back1 -> MX; BS.Front2 -> MY.
+#
+# Assumptions, not a finalized optical design:
+# - Already expanded input beam: w = 20 mm is the 1/e^2 INTENSITY RADIUS.
+# - Waist at the Laser plane, 0.75 m before BS. No bench focusing lens.
+# - 1 W input is a normalization, NOT the noise notebook's effective eta*P.
+# - 200 mm BS and 150 mm end-mirror diameters are illustrative apertures.
+# - Flat mirrors; no telescope or return-mode matching has been optimized.
+# - BS retains a 5 mm, n=1.45 placeholder substrate. Its refraction means
+#   equal coordinate baselines do NOT guarantee equal optical path lengths.
+#   Inspect the path lengths printed by the runner before assigning mismatch.
+# - Photodiodes label ports only: no APD, LO, RF, servo or shot-noise model.
+# - Aperture dimensions in this layout do not establish diffraction losses.
+# Fintrace syntax: https://fintrace.readthedocs.io/en/latest/syntax.html
+
+Laser:
+  Type: Laser
+  Position: {X: -0.75, Y: 0.0}
+  Connections: {Front: BS}
+  P: 1.0
+  Wavelength: 1.064e-6
+  w: 0.020
+  RoC: .inf
+  normAngle: 0.0
+
+BS:
+  Type: Beamsplitter
+  Position: {X: 0.0, Y: 0.0}
+  Connections:
+    Front1: Laser
+    Front2: MY
+    Back1: MX
+    Back2:
+  T: 0.5
+  L: 0.0
+  R_AR: 0.0
+  thickness: 0.005
+  nr: 1.45
+  Rc: .inf
+  Rc_AR: .inf
+  diameter: 0.200
+  normAngle: 135.0
+
+MX:
+  Type: Mirror
+  Position: {X: 1000.0, Y: 0.0}
+  Connections: {Front: BS, Back: null}
+  T: 0.0
+  L: 0.0
+  Rc: .inf
+  diameter: 0.150
+
+MY:
+  Type: Mirror
+  Position: {X: 0.0, Y: 1000.0}
+  Connections: {Front: BS, Back: null}
+  T: 0.0
+  L: 0.0
+  Rc: .inf
+  diameter: 0.150
+
+PDAS:
+  Type: Photodiode
+  Position: {X: 0.0, Y: -0.5}
+  Port: BS.bk2.o
+
+PDREFL:
+  Type: Photodiode
+  Position: {X: -0.5, Y: 0.15}
+  Port: BS.fr1.o

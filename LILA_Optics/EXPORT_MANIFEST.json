@@ -1,0 +1,288 @@
+{
+  "export_date": "2026-10-01",
+  "source_files": [
+    {
+      "path": "models/ilila_1km/ilila_1km.yaml",
+      "source_filename": "ilila_1km.yaml",
+      "source_aliases": [],
+      "bytes": 1948,
+      "sha256": "0a0ae6ba41b5fee131410417d0a1c9f6558fdaa48346074ee19f4ed703df6e9e"
+    },
+    {
+      "path": "models/ilila_1km/run_ilila_1km.py",
+      "source_filename": "run_ilila_1km.py",
+      "source_aliases": [],
+      "bytes": 10638,
+      "sha256": "fa413672148cd85be860a36f1225d0b6f3ff3babbbfd5806ba42af82b8721d52"
+    },
+    {
+      "path": "presentations/iLILA_Weekly_Research_Updates.pptx",
+      "source_filename": "iLILA_Weekly_Research_Updates.pptx",
+      "source_aliases": [],
+      "bytes": 1874846,
+      "sha256": "0469eccc5c7dab36173322023638cfd6fecca3b520014025e5f80dbde357e7c0"
+    },
+    {
+      "path": "analysis/data/iLILA_Readout_Comparison.csv",
+      "source_filename": "iLILA_Readout_Comparison.csv",
+      "source_aliases": [],
+      "bytes": 517,
+      "sha256": "1d228b9c9abf3ff78ca1c2d1d768157fff27cfa21402e28994047bd20f3a1e16"
+    },
+    {
+      "path": "analysis/iLILA_Reference_Noise_and_Allowance.ipynb",
+      "source_filename": "iLILA_Reference_Noise_and_Allowance.ipynb",
+      "source_aliases": [],
+      "bytes": 1133241,
+      "sha256": "d77ec4919ee0f87c7af670dfea0c235802181a7262ac920621d11b1189323d6e"
+    },
+    {
+      "path": "figures/current/iLILA_Readout_Operating_Points.png",
+      "source_filename": "iLILA_Readout_Operating_Points.png",
+      "source_aliases": [],
+      "bytes": 252312,
+      "sha256": "96885178d4b21e4fce265d31b7f0d679034cf78d345af6ad7069c0faa5eafb2a"
+    },
+    {
+      "path": "figures/current/iLILA_Readout_Shot_Noise_Comparison.png",
+      "source_filename": "iLILA_Readout_Shot_Noise_Comparison.png",
+      "source_aliases": [],
+      "bytes": 271626,
+      "sha256": "9b3d41e7fb624ab81970d37aa85729541114b66727e1bdbc7b8c0bb0c5f4ef8d"
+    },
+    {
+      "path": "figures/current/iLILA_Frequency_Noise_Requirements.png",
+      "source_filename": "iLILA_Frequency_Noise_Requirements.png",
+      "source_aliases": [],
+      "bytes": 236494,
+      "sha256": "5fc5f4e37fd2676ddd0cb3820a15b883864d6da5b339ad0d21232aaf9a8f62a8"
+    },
+    {
+      "path": "figures/current/iLILA_Additional_Noise_Allowance.png",
+      "source_filename": "iLILA_Additional_Noise_Allowance.png",
+      "source_aliases": [],
+      "bytes": 179490,
+      "sha256": "4c71f3879d0785c22a11e79942e7021e7953524dac6299b703e991ccf4c85314"
+    },
+    {
+      "path": "docs/iLILA_Optical_Sensitivity_Project_Plan.docx",
+      "source_filename": "iLILA_Optical_Sensitivity_Project_Plan.docx",
+      "source_aliases": [],
+      "bytes": 47346,
+      "sha256": "cf2166e7ec4b204cdb96e2ca120b0f1f257a89bbe3556f060b9d0134bf55e8c5"
+    },
+    {
+      "path": "figures/current/iLILA_Reference_Displacement_Budget.png",
+      "source_filename": "iLILA_Reference_Displacement_Budget.png",
+      "source_aliases": [],
+      "bytes": 182049,
+      "sha256": "549de5743fc0a7943bcaefaee104e5e2839129b3b79d1ad7b0a56a16920c9f17"
+    },
+    {
+      "path": "references/LILAL-noise.pdf",
+      "source_filename": "LILAL-noise.pdf",
+      "source_aliases": [],
+      "bytes": 590467,
+      "sha256": "df1c342fb3ade52d5ebdccf9f4d4c0c8ef6e1890b019518f96eb4aae42393261"
+    },
+    {
+      "path": "archive/reports/LILA_Detailed_Noise_Budget_Known_Assumed_Missing.pdf",
+      "source_filename": "LILA_Detailed_Noise_Budget_Known_Assumed_Missing.pdf",
+      "source_aliases": [],
+      "bytes": 3349286,
+      "sha256": "213102dab46819aaf1b6613305c6151c62491e2519050c461f72d8dd90ac41a1"
+    },
+    {
+      "path": "archive/reports/LILA_Detailed_Noise_Budget_Known_Assumed_Missing.pptx",
+      "source_filename": "LILA_Detailed_Noise_Budget_Known_Assumed_Missing.pptx",
+      "source_aliases": [],
+      "bytes": 3041580,
+      "sha256": "e9206f78941d4d8c92a2ec98202db66fa42627cb2d6be177d791d2e39a299262"
+    },
+    {
+      "path": "archive/reports/LILA_Noise_Budget_V1_vs_V2_Results.pdf",
+      "source_filename": "LILA_Noise_Budget_V1_vs_V2_Results.pdf",
+      "source_aliases": [],
+      "bytes": 1628566,
+      "sha256": "878d11b11cbd0c4dc55043d004fd50156a5795ba4b819deecc6256e21693f8e0"
+    },
+    {
+      "path": "archive/reports/LILA_Noise_Budget_V1_vs_V2_Results.pptx",
+      "source_filename": "LILA_Noise_Budget_V1_vs_V2_Results.pptx",
+      "source_aliases": [],
+      "bytes": 1676805,
+      "sha256": "5fcb05602e37bc91c743b1c77534cb12040b8315f671760b5a822c045b420896"
+    },
+    {
+      "path": "archive/noise_budget_v2/lila_pioneer_noise_budget_V2.png",
+      "source_filename": "lila_pioneer_noise_budget_V2.png",
+      "source_aliases": [],
+      "bytes": 644210,
+      "sha256": "c46d8b7a57327aa439923e676f7c15bcd462dd02d0da26583da8a2b60d1130b2"
+    },
+    {
+      "path": "archive/noise_budget_v2/lila_pioneer_noise_budget_data_V2.csv",
+      "source_filename": "lila_pioneer_noise_budget_data_V2.csv",
+      "source_aliases": [],
+      "bytes": 578942,
+      "sha256": "968b44f9ff9d6c6179698c0750450a6bf5be2674341c9519523df44dd32f0b27"
+    },
+    {
+      "path": "archive/noise_budget_v2/LILA_Pioneer_Noise_Budget_README_V2.md",
+      "source_filename": "LILA_Pioneer_Noise_Budget_README_V2.md",
+      "source_aliases": [],
+      "bytes": 8337,
+      "sha256": "a5765aeb866e8430c2bf28ea919d959ed19869e3b1d0ea2492061a10c0609f99"
+    },
+    {
+      "path": "archive/noise_budget_v2/LILA_Pioneer_Noise_Budget_V2.ipynb",
+      "source_filename": "LILA_Pioneer_Noise_Budget_V2.ipynb",
+      "source_aliases": [
+        "LILA_Pioneer_Noise_Budget_V2 (1).ipynb"
+      ],
+      "bytes": 7190,
+      "sha256": "57fd32e04f2989f31b7035b9e9ed9453b3cba5440fa9a65d0ed6cf4e91e8c256"
+    },
+    {
+      "path": "archive/noise_budget_v2/lila_pioneer_noise_budget_V2.py",
+      "source_filename": "lila_pioneer_noise_budget_V2.py",
+      "source_aliases": [],
+      "bytes": 26610,
+      "sha256": "3174cc1a4c587c6264617d4df11b803a2e72a6fe27489e2f31b9d7abf1def5b8"
+    },
+    {
+      "path": "archive/noise_budget_v2/lila_pioneer_reference_values_V2.csv",
+      "source_filename": "lila_pioneer_reference_values_V2.csv",
+      "source_aliases": [],
+      "bytes": 1502,
+      "sha256": "cade5aac7c54f73b30a5e77dd3c0f68bcd6929190a060ae77dd2de43dbc616b3"
+    },
+    {
+      "path": "archive/noise_budget_v2/lila_pioneer_model_assumptions_V2.csv",
+      "source_filename": "lila_pioneer_model_assumptions_V2.csv",
+      "source_aliases": [],
+      "bytes": 3677,
+      "sha256": "4f979eb6b486a1fd922b72fa115bbd7a210f251b99e53455308bd6809cc2e32f"
+    },
+    {
+      "path": "archive/noise_budget_v1/LILA_Pioneer_Noise_Budget_README_V1.md",
+      "source_filename": "LILA_Pioneer_Noise_Budget_README_V1.md",
+      "source_aliases": [],
+      "bytes": 5905,
+      "sha256": "5df92f2d37753fa12d53271fbcdff05f5fd6207200d11a81aa04ddce53c2d18d"
+    },
+    {
+      "path": "archive/noise_budget_v1/lila_pioneer_model_assumptions_V1.csv",
+      "source_filename": "lila_pioneer_model_assumptions_V1.csv",
+      "source_aliases": [],
+      "bytes": 1809,
+      "sha256": "05a032eca2cc2eb56d447eebd9a3697686373efa864f15f3238880c9589eac7a"
+    },
+    {
+      "path": "archive/noise_budget_v1/lila_pioneer_reference_values_V1.csv",
+      "source_filename": "lila_pioneer_reference_values_V1.csv",
+      "source_aliases": [],
+      "bytes": 1380,
+      "sha256": "af25e3607aabfcaeba68dcc691f61a9ffa2ec222bc44bd56fc85bb8b9c27ff10"
+    },
+    {
+      "path": "archive/noise_budget_v1/lila_pioneer_noise_budget_data_V1.csv",
+      "source_filename": "lila_pioneer_noise_budget_data_V1.csv",
+      "source_aliases": [],
+      "bytes": 492166,
+      "sha256": "27239aad21987e2626e67f6dd4af97de48040168227a3e78656e01a607a34aa7"
+    },
+    {
+      "path": "archive/noise_budget_v1/lila_pioneer_noise_budget_V1.png",
+      "source_filename": "lila_pioneer_noise_budget_V1.png",
+      "source_aliases": [],
+      "bytes": 539342,
+      "sha256": "3dc7ab8ad195117cc614a978a7a5ebe6ec8589f7cb8acc5564e61f41975d636e"
+    },
+    {
+      "path": "archive/noise_budget_v1/lila_pioneer_noise_budget_V1.py",
+      "source_filename": "lila_pioneer_noise_budget_V1.py",
+      "source_aliases": [],
+      "bytes": 19407,
+      "sha256": "7888cb0a6cd210e136cb42421e8c0b3bbc8ec71f06d0ee2d39f32f5796569c1c"
+    },
+    {
+      "path": "archive/noise_budget_v1/LILA_Pioneer_Noise_Budget_V1.ipynb",
+      "source_filename": "LILA_Pioneer_Noise_Budget_V1.ipynb",
+      "source_aliases": [],
+      "bytes": 5837,
+      "sha256": "fbb94b85695a7d43f3a45fd524342cebbae587582542b88bd28369aa911a6b89"
+    },
+    {
+      "path": "figures/bench_archive/michelson_layout_(3).png",
+      "source_filename": "michelson_layout (3).png",
+      "source_aliases": [],
+      "bytes": 115210,
+      "sha256": "f67c2b8c88aeae2ad4b4420ec12a6cd0dbf26bef4c09ab1bda4cd3a3a8aff1e4"
+    },
+    {
+      "path": "models/bench/simple_michelson_1550nm.yaml",
+      "source_filename": "simple_michelson_1550nm.yaml",
+      "source_aliases": [],
+      "bytes": 3108,
+      "sha256": "5b4acf36c711942b7a204f382a7d4845c6f61d7d4bbc331a787efa0ae9152760"
+    },
+    {
+      "path": "figures/bench_archive/michelson_layout_(2).png",
+      "source_filename": "michelson_layout (2).png",
+      "source_aliases": [],
+      "bytes": 97357,
+      "sha256": "989242d22440ebbb141f7678ca309b7591c045be1127fd0f7035bc7d7db7fb35"
+    },
+    {
+      "path": "models/bench/run_michelson_gouy_fixed.py",
+      "source_filename": "run_michelson_gouy_fixed.py",
+      "source_aliases": [],
+      "bytes": 2260,
+      "sha256": "f42fdb75204d61d415344b2e4a49223d77a322db7128d7d50ce5fe9c79c2f4ee"
+    },
+    {
+      "path": "figures/bench_archive/michelson_layout.png",
+      "source_filename": "michelson_layout.png",
+      "source_aliases": [],
+      "bytes": 106500,
+      "sha256": "82901bf5cac31126958253b819928b2f37882992d877dcb29fc05ef2e2c5d8c7"
+    },
+    {
+      "path": "models/bench/simple_michelson.yaml",
+      "source_filename": "simple_michelson.yaml",
+      "source_aliases": [],
+      "bytes": 1372,
+      "sha256": "d086dffcea6b6a0230aa93e41fdd54e4923950ab73bdb88f82543c646096b5e2"
+    },
+    {
+      "path": "models/bench/run_michelson_gouy.py",
+      "source_filename": "run_michelson_gouy.py",
+      "source_aliases": [],
+      "bytes": 1814,
+      "sha256": "9371981e086ef96d887af5ae0c8feb88ac087eab95d15e87794973e126d028b2"
+    },
+    {
+      "path": "presentations/archive/Presentation_Optical_Modeling_Overview.pdf",
+      "source_filename": "Presentation - Optical Modeling Overview.pdf",
+      "source_aliases": [],
+      "bytes": 4211536,
+      "sha256": "eaff9c221e277c3625dbf1816abf6fb51d6e7dad362d7d4199966d01e06975ae"
+    },
+    {
+      "path": "references/apra_Interferometer_V1.pdf",
+      "source_filename": "apra_Interferometer - V1.pdf",
+      "source_aliases": [],
+      "bytes": 477368,
+      "sha256": "4bb5e60db8fbaecbe7b9f92b2146d0404f2a33b0e3199d30f1ad695de286508c"
+    },
+    {
+      "path": "archive/noise_budget_v2/alternate_plot_2026-09-15.png",
+      "source_filename": "lila_pioneer_noise_budget_V2 (1).png",
+      "source_aliases": [],
+      "bytes": 637842,
+      "sha256": "1284550647e7b98d5fcb5a5e0b1e26361f277d3054ae7264803a00e4d8053354"
+    }
+  ],
+  "notes": "Latest available project artifacts. Duplicate uploads collapsed by SHA-256. Existing repository root files retained. Prior model results remain archival."
+}

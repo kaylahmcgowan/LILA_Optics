@@ -1,0 +1,120 @@
+# Preliminary 1550 nm FinTrace Michelson interferometer
+# Updated from the supplied 1064 nm baseline using Interferometer - V1-1.pdf.
+# This is a parameter study, NOT a complete model of the proposed hardware.
+#
+# Confirmed parts-list wavelength: 1550 nm (TC12APC-1550, IOT-4-1550-VLP).
+# PROVISIONAL beam assumption: quoted ~2.5 mm beam size is interpreted as
+# 1/e^2 intensity DIAMETER, so Gaussian radius w = 1.25 mm.
+# If 2.5 mm means radius instead, change w to 0.0025 before comparing results.
+# Laser represents the effective collimator output; RoC=.inf assumes a planar
+# wavefront there. Actual collimator output q and fiber mode field are unknown.
+# Do not replace L1 with the collimator focal length: that would refocus an
+# already collimated source. L1 remains the original ideal test lens.
+#
+# Retained baseline assumptions (not hardware specifications):
+# P=1 W is a normalization, not measured laser power or detector input power.
+# Lens f=0.50 m; 0.50 m coordinate arm lengths; all optic diameters 25 mm.
+# BS is an ideal lossless 50/50 plate: 5 mm thick, n=1.45, planar surfaces.
+# BS index is a placeholder, not a verified substrate index at 1550 nm.
+# Mirrors are planar perfect reflectors. No suspension dynamics are included.
+# Isolator, detector focusing lens, APD gain/aperture, piezo stage, mounts,
+# thermal noise and polarization are NOT represented in this baseline.
+# The original geometry has not been fitted to the B1818F breadboard.
+# Needed next: lens/BS/mirror part numbers, actual separations, output beam q,
+# beam-size convention, laser power, detector focusing and support properties.
+#
+# Rerun note: ensure the Python runner uses this wavelength and beam radius;
+# any hard-coded 1064 nm, 0.5 mm radius or q_in would override this update.
+#
+# Topology:
+#   Laser -> L1 -> BS.Front1
+#                       |-- BS.Back1  -> MX  (transmitted x arm)
+#                       |-- BS.Front2 -> MY  (reflected y arm)
+#                       `-- BS.Back2  -> PD_AS (antisymmetric/dark port)
+#
+# All positions and dimensions are in meters. Angles are in degrees.
+
+Laser:
+  Type: Laser
+  Position:
+    X: -0.75
+    Y: 0.00
+  Connections:
+    Front: L1
+  P: 1.0
+  Wavelength: 1.55e-6
+  w: 0.00125
+  RoC: .inf
+  normAngle: 0.0
+
+L1:
+  Type: Lens
+  Position:
+    X: -0.50
+    Y: 0.00
+  Connections:
+    Front: Laser
+    Back: BS
+  Focal Length: 0.50
+  diameter: 0.025
+
+BS:
+  Type: Beamsplitter
+  Position:
+    X: 0.00
+    Y: 0.00
+  Connections:
+    Front1: L1
+    Front2: MY
+    Back1: MX
+    Back2:
+  T: 0.50
+  L: 0.0
+  R_AR: 0.0
+  thickness: 0.005
+  nr: 1.45
+  Rc: .inf
+  Rc_AR: .inf
+  diameter: 0.025
+  normAngle: 135.0
+  aoi: 45.0
+
+MX:
+  Type: Mirror
+  Position:
+    X: 0.50
+    Y: 0.00
+  Connections:
+    Front: BS
+    Back:
+  T: 0.0
+  L: 0.0
+  Rc: .inf
+  diameter: 0.025
+
+MY:
+  Type: Mirror
+  Position:
+    X: 0.00
+    Y: 0.50
+  Connections:
+    Front: BS
+    Back:
+  T: 0.0
+  L: 0.0
+  Rc: .inf
+  diameter: 0.025
+
+PD_AS:
+  Type: Photodiode
+  Position:
+    X: 0.00
+    Y: -0.10
+  Port: BS.bk2.o
+
+PD_REFL:
+  Type: Photodiode
+  Position:
+    X: -0.30
+    Y: 0.00
+  Port: BS.fr1.o

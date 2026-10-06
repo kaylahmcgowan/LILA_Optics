@@ -1,0 +1,55 @@
+parameter,value,status
+arm_length_m,1000.0,Current Templeton proposal
+laboratory_arm_length_m,1.0,Current Templeton proposal
+opening_angle_deg,90.0,Current Templeton proposal
+wavelength_m,1.064e-06,Current Templeton proposal
+input_laser_power_W,1.0,Current Templeton proposal
+amplified_laser_power_W,2.0,Current Templeton proposal
+target_frequency_min_Hz,0.001,Current Templeton proposal
+target_frequency_max_Hz,0.1,Current Templeton proposal
+displacement_requirement_m_per_rtHz,1e-15,Current Templeton proposal
+optical_bench_temperature_stability_K,0.01,Current Templeton proposal
+lovbb_acceleration_asd_m_per_s2_rtHz,1e-11,Current Templeton proposal
+lovbb_equivalent_displacement_m_per_rtHz,1e-15,Current Templeton proposal
+far_reflector_diameter_m,0.1,Current Templeton proposal
+far_reflector_alignment_tolerance_deg,3.0,Current Templeton proposal
+temperature_K,300.0,Editable assumption/model control
+assumed_power_per_arm_W,1.0,Editable assumption/model control
+assumed_round_trip_optical_efficiency,0.05,Editable assumption/model control
+assumed_photodiode_quantum_efficiency,0.8,Editable assumption/model control
+heritage_thermal_target_psd_1Hz_m2_per_Hz,1.2e-33,Older LILA sensitivity-paper heritage
+heritage_thermal_conservative_psd_1Hz_m2_per_Hz,6e-32,Older LILA sensitivity-paper heritage
+heritage_dust_psd_reference_m2_per_Hz,1.6e-35,Older LILA sensitivity-paper heritage
+dust_density_per_m3,0.003,Editable assumption/model control
+dust_radius_m,7e-07,Editable assumption/model control
+dust_speed_m_per_s,300.0,Editable assumption/model control
+assumed_arm_beam_radius_m,0.01,Editable assumption/model control
+assumed_arm_length_mismatch_m,0.01,Editable assumption/model control
+assumed_laser_frequency_asd_1Hz_Hz_per_rtHz,1.0,Editable assumption/model control
+laser_frequency_corner_Hz,0.01,Editable assumption/model control
+substrate_poisson_ratio,0.17,Editable assumption/model control
+substrate_youngs_modulus_Pa,72000000000.0,Editable assumption/model control
+substrate_loss_angle,1e-07,Editable assumption/model control
+assumed_narrowest_beam_radius_m,0.0005,Editable assumption/model control
+assumed_rin_asd_0p1Hz_per_rtHz,2e-06,Editable assumption/model control
+rin_low_frequency_corner_Hz,0.01,Editable assumption/model control
+assumed_amplitude_to_phase_rad_per_rin,0.0001,Editable assumption/model control
+assumed_beam_spot_offset_m,0.0001,Editable assumption/model control
+assumed_angular_jitter_asd_0p1Hz_rad_per_rtHz,1e-12,Editable assumption/model control
+angular_jitter_corner_Hz,0.01,Editable assumption/model control
+assumed_local_unbalanced_path_m,0.1,Editable assumption/model control
+assumed_bench_effective_cte_per_K,1e-08,Editable assumption/model control
+assumed_temperature_asd_0p1Hz_K_per_rtHz,1e-07,Editable assumption/model control
+temperature_asd_power,1.0,Editable assumption/model control
+assumed_readout_phase_floor_rad_per_rtHz,1e-09,Editable assumption/model control
+assumed_actuator_residual_asd_0p1Hz_m_per_rtHz,1e-16,Editable assumption/model control
+actuator_residual_corner_Hz,0.01,Editable assumption/model control
+assumed_scattered_light_asd_0p1Hz_m_per_rtHz,1e-17,Editable assumption/model control
+scattered_light_corner_Hz,0.01,Editable assumption/model control
+apollo_instrument_floor_m_per_s2_rtHz,1e-10,Editable assumption/model control
+apollo_diagnostic_min_Hz,0.05,Editable assumption/model control
+apollo_diagnostic_max_Hz,1.0,Editable assumption/model control
+assumed_seismic_subtraction_residual_fraction,0.1,Editable assumption/model control
+frequency_min_Hz,0.0001,Editable assumption/model control
+frequency_max_Hz,1.0,Editable assumption/model control
+frequency_points,1601.0,Editable assumption/model control
